@@ -3,7 +3,7 @@ import { ContainerContent, GlobalStyle } from './GlobalStyle';
 import { io } from 'socket.io-client';
 import Peer from 'peerjs';
 
-const SocketConnection = io('http://localhost:3234/peerConnection', { transports: ['websocket'] });
+const SocketConnection = io('https://zoom-shareserver.herokuapp.com/peerConnection', { transports: ['websocket'] });
 
 function App() {
 
